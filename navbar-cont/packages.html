@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages</title>
+  <link rel="stylesheet" href="/ca.css">
+  <style>
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+  
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #000;
+      margin: 20px 0;
+      margin-top: 50px;
+     
+    }
+
+    h2 {
+      color: #555;
+      margin-top: 30px;
+    }
+
+    .package-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .package {
+      width: 320px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+      text-align: left;
+    }
+
+    .package:hover {
+      transform: scale(1.05);
+      box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .domestic { border: 2px solid #4CAF50; background-color: #f0fdf4; }
+    .international { border: 2px solid #007BFF; background-color: #f0f8ff; }
+    
+    
+    .package img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .details {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .price {
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #d32f2f;
+    }
+
+    .book-btn {
+      background-color: blue;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .book-btn:hover {
+      background-color: #e64a19;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <p><strong>SALLYTRAVELS.COM</strong></p>
+    </div>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="destination.html">Destinations</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="booknow.html">Book Now</a></li>
+    </ul>
+    <div class="search-box">
+      <input type="text" placeholder="Search Destinations">
+      <button>Search</button>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+  <h1>Explore Our Travel Packages</h1>
+
+  <!-- Domestic Packages -->
+  <h2>🏡 Domestic Packages</h2>
+  <div class="package-container">
+    <div class="package domestic">
+      <img src="/packages/lagpackage.avif" alt="Lagos">
+      <h3>Lagos Getaway</h3>
+      <p>5 Days | Return Flights | 5-Star Hotel | City Tour</p>
+      <p class="price">₦500,000</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package domestic">
+      <img src="/packages/abjpackage.webp" alt="Abuja">
+      <h3>Abuja Adventure</h3>
+      <p>4 Days | Return Flights | Luxury Stay | Tour</p>
+      <p class="price">₦450,000</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <!-- International Packages -->
+  <h2>✈ International Packages</h2>
+  <div class="package-container">
+    <div class="package international">
+      <img src="/packages/paripackage.avif" alt="Paris">
+      <h3>Paris Luxury</h3>
+      <p>5 Days | Flights | 5-Star Hotel | Eiffel Tower Tour</p>
+      <p class="price">$2,500</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package international">
+      <img src="/packages/usapackage.webp" alt="New York">
+      <h3>New York Experience</h3>
+      <p>5 Days | Flights | 5-Star Stay | Statue of Liberty Tour</p>
+      <p class="price">$2,800</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package international">
+      <img src="/packages/dubaipackage.webp" alt="Dubai">
+      <h3>Dubai Luxury</h3>
+      <p>5 Days | Flights | 5-Star Hotel | Desert Safari</p>
+      <p class="price">$2,000</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Themed Packages -->
+  <h2>🌟 Luxury Escapes</h2>
+  <div class="package-container">
+    <div class="package">
+      <img src="/packages/maldivespackage.webp" alt="Maldives">
+      <h3>Maldives Paradise</h3>
+      <p>5-Star Beachfront Villa, Spa, Private Yacht Tour</p>
+      <p class="price">$3,500</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package">
+      <img src="/packages/bhurjpackage.webp" alt="Dubai">
+      <h3>Dubai Luxury</h3>
+      <p>Burj Al Arab Stay, Desert Safari, Private Chauffeur</p>
+      <p class="price">$2,800</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <h2>🌍 Adventure Trips</h2>
+  <div class="package-container">
+    <div class="package">
+      <img src="/packages/balipackage.webp" alt="Bali">
+      <h3>Bali Jungle Adventure</h3>
+      <p>Volcano Hike, Rafting, Waterfalls</p>
+      <p class="price">$1,800</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package">
+      <img src="/packages/capepackage.avif" alt="Cape Town">
+      <h3>Cape Town Safari</h3>
+      <p>Wildlife Safari, Table Mountain Tour</p>
+      <p class="price">$2,200</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <h2>🏛 Cultural Tours</h2>
+  <div class="package-container">
+    <div class="package">
+      <img src="/packages/romepackage.avif" alt="Rome">
+      <h3>Rome Heritage Tour</h3>
+      <p>Colosseum, Vatican City, Wine Tasting</p>
+      <p class="price">$2,500</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package">
+      <img src="/packages/londonpackage.webp" alt="London">
+      <h3>London History Walk</h3>
+      <p>Big Ben, Buckingham Palace, Museums</p>
+      <p class="price">$2,700</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+  <h2>💑 Honeymoon Packages</h2>
+  <div class="package-container">
+    <div class="package">
+      <img src="/packages/parisipackage.avif" alt="Paris">
+      <h3>Paris Romantic Escape</h3>
+      <p>Seine River Cruise, Eiffel Tower Dinner</p>
+      <p class="price">$3,200</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+    <div class="package">
+      <img src="/packages/santorinipackage.webp" alt="Santorini">
+      <h3>Santorini Sunset Love</h3>
+      <p>Private Villa, Beach Dinner, Yacht Tour</p>
+      <p class="price">$2,900</p>
+      <button class="book-btn">Book Now</button>
+    </div>
+  </div>
+
+</body>
+</html>
